@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: linear-gradient(to left, #5e8dec, #2965CC);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container{
+    padding: 0 50px;
+    margin: 0 0;
+}
+.logo{
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+    width: 20%;
+    font-size: 2rem;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.navbar{
+    display: flex;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(to left, #5e8dec, #2965CC);
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav li{
+    list-style: none;
+    margin-left: 1rem; 
+    padding: 1rem 0;
+}
+.navbar nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: all 0.5s ease-out;
+}
+.navbar nav li a:hover{
+    color: white;
+    transition:all 0.5s ease-in;
+}
+video{
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+}
+#about,#contact,#services{
+    display: flex;
+    width: 80%;
+    height: 50vh;
+    justify-content: left;
+    flex-direction: column;
+}
+.content h2,#about h2,#services h2,#contact h2{
+    font-size: 60px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-family: "ubuntu" sans-serif;
+}
+.content button{
+    display: block;
+    margin: 2rem 0;
+    width: 20%;
+    color: #ddd;
+    padding: 0.7rem 0;
+    background:inherit;
+    border: 4px solid;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.content button:hover{
+    background: white;
+    color: black;
+}
+.content p,#about p,#services p,#contact p{
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 0.6px black;
+    font-family: "ubuntu" sans-serif;
+}
+#services ul{
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 0.6px black;
+    font-family: "ubuntu" sans-serif;
+    list-style-type:circle;
+    padding-left: 25px;
+    padding-bottom: 2px;
+}
+
+
